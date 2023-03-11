@@ -78,16 +78,16 @@ lower_layer {
 // .--------------------------------------------------------------.       .-----------------------------------------------------------.
 // |   ~          |    1    |    2   |   3    |    4    |    5    |       |   6   |    7    |    8    |    9    |     0    |    \     |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   CAPS       |    !    |    @   |   #    |    $    |    %    |       |   ^   |    &    |    *    |    (    |     )    |     :    |
+// |   SHFT       |    !    |    @   |   #    |    $    |    %    |       |   ^   |    &    |    *    |    (    |     )    |     :    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   SHFT       |         |    -   |   +    |    {    |    [    |       |   ]   |    }    |    _    |    =    |          |          |
+// |   CTRL       |         |    -   |   +    |    {    |    [    |       |   ]   |    }    |    _    |    =    |          |          |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
 //                                   |  MO3   |         |   GUI   |       |  DEL  |         |  MENU   |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
    &kp GRAVE    &kp N1       &kp N2            &kp N3             &kp N4               &kp N5            &kp N6                   &kp N7                     &kp N8                 &kp N9                   &kp N0     &kp NUBS
-   &kp CAPSLOCK &kp EXCL     &kp AT            &kp HASH           &kp DLLR             &kp PRCNT         &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
-   &kp LSHFT    &trans       &kp KP_MINUS       &kp KP_PLUS       &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp RIGHT_BRACE            &kp UNDERSCORE           &kp KP_EQUAL           &trans     &trans
+   &kp LSHIFT   &kp EXCL     &kp AT            &kp HASH           &kp DLLR             &kp PRCNT         &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
+   &kp LCTRL    &trans       &kp KP_MINUS       &kp KP_PLUS       &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp RIGHT_BRACE            &kp UNDERSCORE           &kp KP_EQUAL           &trans     &trans
                                              &mo ADJUST           &trans               &kp LGUI          &kp DEL                &trans                  &kp RGUI
                         >;
                 };
@@ -105,7 +105,7 @@ lower_layer {
 
                         bindings = <
    &trans                 &kp PAGE_UP     &kp PAGE_UP        &kp UP_ARROW      &kp PAGE_DOWN       &kp HOME                &kp CARET            &kp PAGE_UP             &kp UP_ARROW       &kp PAGE_DOWN      &kp HOME     &kp LG(LS(N4))
-   &trans                 &kp PAGE_DOWN   &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp LEFT            &kp DOWN          &kp UP     &kp RIGHT    &kp END      &trans
+   &kp CAPSLOCK           &kp PAGE_DOWN   &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp LEFT            &kp DOWN          &kp UP     &kp RIGHT    &kp END      &trans
    &out OUT_TOG           &trans     &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)     &trans             &trans             &trans       &out OUT_TOG
                                      &trans           &mo ADJUST        &kp LGUI              &trans   &trans   &trans
                         >;
@@ -117,16 +117,16 @@ lower_layer {
 // |---------+--------+--------+--------+---------+---------|       |--------+--------+---------+---------+----------+-------------|
 // |         |        |        |        |         |         |       |        |        |         |         |          |             |
 // |---------+--------+--------+--------+---------+---------|       |--------+--------+---------+---------+----------+-------------|
-// |  BTCLR  |  BT1   |  BT2   |  BT3   |  BT4    |  BT5    |       | BR_UP  | BR_DN  |         |         |          |             |
+// |  BTCLR  |  BT1   |  BT2   |  BT3   |  BT4    |  BT5    |       | BR_DN  | BR_UP  |         |         |          |             |
 // '---------------------------+--------+---------+---------+       |--------+--------+---------+----------------------------------'
-//                             | Reset  |         |         |       |  MUTE  |  VOL-  |   VOL+  |
+//                             |        |         |  Reset  |       |  MUTE  |  VOL-  |   VOL+  |
 //                             '--------+---------+---------'       '--------+--------+---------'
 
                         bindings = <
    &kp F1      &kp F2         &kp F3         &kp F4          &kp F5          &kp F6            &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
    &trans      &trans          &trans         &trans          &trans          &trans            &trans             &trans &trans &trans &trans &trans
-   &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp C_BRI_UP  &kp C_BRI_DN &trans &trans &trans &trans
-                                   &reset &trans &trans   &kp C_MUTE &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+   &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp C_BRI_DN  &kp C_BRI_UP &trans &trans &trans &trans
+                                   &trans &trans &reset   &kp C_MUTE &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
                         >;
                 };
 
