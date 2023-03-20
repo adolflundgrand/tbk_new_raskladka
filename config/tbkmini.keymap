@@ -60,17 +60,17 @@
 // .--------------------------------------------------------------.       .-----------------------------------------------------------.
 // |   ESC        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    [     |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   Shift/Tab  |    A    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |     ;    |     ]    |
+// |  SHIFT/Tab   |    A    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |     ;    |     ]    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   CTRL       |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    |     '    |
+// |     ALT      |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    |     '    |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-//                                   |  ENT   |   MO1   |   GUI   |       |  BSPC |  SPACE  |   ALT   |
+//                                   |  ENT   |   MO1   |  CTRL   |       |  BSPC |  SPACE  |   GUI   |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
    &kp ESC        &kp Q       &kp W      &kp E     &kp R           &kp T   &kp Y  &kp U           &kp I        &kp O     &kp P      &kp LBKT
    &mt LSHIFT TAB  &kp A       &kp S      &kp D     &kp F           &kp G   &kp H  &kp J           &kp K        &kp L     &kp SEMI   &kp RBKT
-   &kp LCTRL      &kp Z       &kp X      &kp C     &kp V           &kp B   &kp N  &kp M           &kp COMMA    &kp DOT   &kp FSLH   &kp SQT
-                  &lt NAVI RET    &mo 1      &kp LGUI              &kp BSPC    &kp SPACE       &kp LALT
+   &kp LALT      &kp Z       &kp X      &kp C     &kp V           &kp B   &kp N  &kp M           &kp COMMA    &kp DOT   &kp FSLH   &kp SQT
+                  &lt NAVI RET    &mo 1      &kp LCTRL              &kp BSPC    &kp SPACE       &kp LGUI
                         >;
                 };
 		
@@ -78,17 +78,17 @@ lower_layer {
 // .--------------------------------------------------------------.       .-----------------------------------------------------------.
 // |   ~          |    1    |    2   |   3    |    4    |    5    |       |   6   |    7    |    8    |    9    |     0    |    \     |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   SHFT       |    !    |    @   |   #    |    $    |    %    |       |   ^   |    &    |    *    |    (    |     )    |     :    |
+// |   CAPS       |    !    |    @   |   #    |    $    |    %    |       |   ^   |    &    |    *    |    (    |     )    |     :    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   CTRL       |         |    -   |   +    |    {    |    [    |       |   ]   |    }    |    _    |    =    |          |          |
+// |   SHIFT      |         |    -   |   +    |    {    |    [    |       |   ]   |    }    |    _    |    =    |          |          |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-//                                   |  MO3   |         |   GUI   |       |  DEL  |         |  MENU   |
+//                                   |  MO3   |         |   CTRL  |       |  DEL  |         |   GUI   |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
    &kp GRAVE    &kp N1       &kp N2            &kp N3             &kp N4               &kp N5            &kp N6                   &kp N7                     &kp N8                 &kp N9                   &kp N0     &kp NUBS
-   &kp LSHIFT   &kp EXCL     &kp AT            &kp HASH           &kp DLLR             &kp PRCNT         &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
-   &kp LCTRL    &trans       &kp KP_MINUS       &kp KP_PLUS       &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp RIGHT_BRACE            &kp UNDERSCORE           &kp EQUAL           &trans     &trans
-                                             &mo ADJUST           &trans               &kp LGUI          &kp DEL                &trans                  &kp RGUI
+   &kp CAPS   &kp EXCL     &kp AT            &kp HASH           &kp DLLR             &kp PRCNT         &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
+   &kp LSHIFT    &trans       &kp KP_MINUS       &kp KP_PLUS       &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp RIGHT_BRACE            &kp UNDERSCORE           &kp EQUAL           &trans     &trans
+                                             &mo ADJUST           &trans               &kp LCTRL          &kp DEL                &SPACE                  &kp LGUI
                         >;
                 };
                 
@@ -98,16 +98,16 @@ lower_layer {
 // |----------------+-------+--------+--------+----------+----------|       |---------+----------+---------+---------+----------+-------------|
 // |                |  PD   |  LEFT  |  DOWN  |   RIGHT  |   END    |       |  LEFT   |   DOWN   |    UP   |  RIGHT  |          |             |
 // |----------------+-------+--------+--------+----------+----------|       |---------+----------+---------+---------+----------+-------------|
-// |     OUT_TOG    |       |        |        |CTRL+LEFT |CTRL+RIGHT|       |CTRL+LEFT|CTRL+RIGHT|         |         |          |   OUT_TOG   |
+// |                |        |        |CTRL+LEFT |CTRL+RIGHT|       |CTRL+LEFT|CTRL+RIGHT|         |         |          |   OUT_TOG   |
 // '---------------------------------+--------+----------+----------+       |---------+----------+---------+----------------------------------'
-//                                   |        |   MO3    |   GUI    |       |         |          |         |
+//                                   |        |   MO3    |   CTRL   |       |         |          |   GUI   |
 //                                   '--------+----------+----------'       '---------+----------+---------'
 
                         bindings = <
    &trans                 &kp PAGE_UP     &kp PAGE_UP        &kp UP_ARROW      &kp PAGE_DOWN       &kp HOME                &kp CARET            &kp PAGE_UP             &kp UP_ARROW       &kp PAGE_DOWN      &kp HOME     &kp LG(LS(N4))
    &kp CAPSLOCK           &kp PAGE_DOWN   &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp LEFT            &kp DOWN          &kp UP     &kp RIGHT    &kp END      &trans
-   &out OUT_TOG           &trans     &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)     &trans             &trans             &trans       &out OUT_TOG
-                                     &trans           &mo ADJUST        &kp LGUI              &trans   &trans   &trans
+   &trans                 &trans     &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)     &trans             &trans             &trans       &out OUT_TOG
+                                     &trans           &mo ADJUST        &kp LCTRL              &trans   &trans   &LGUI
                         >;
                 };
 
