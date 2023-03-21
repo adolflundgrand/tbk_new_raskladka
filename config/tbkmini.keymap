@@ -107,7 +107,7 @@ lower_layer {
    &trans                 &kp PAGE_UP     &kp PAGE_UP        &kp UP_ARROW      &kp PAGE_DOWN       &kp HOME                &kp CARET            &kp PAGE_UP             &kp UP_ARROW       &kp PAGE_DOWN      &kp HOME     &kp LG(LS(N4))
    &kp CAPSLOCK           &kp PAGE_DOWN   &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp LEFT            &kp DOWN          &kp UP     &kp RIGHT    &kp END      &trans
    &trans                 &trans     &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)     &trans             &trans             &trans       &out OUT_TOG
-                                     &trans           &mo ADJUST        &kp LCTRL              &trans   &trans   &LGUI
+                                     &trans           &mo ADJUST        &kp LCTRL              &trans   &trans   &kp LGUI
                         >;
                 };
 
