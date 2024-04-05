@@ -14,7 +14,7 @@
   flavor = "hold-preferred";
 };
 
-/ {
+{
   chosen {
     zmk,matrix_transform = &default_transform;
   };
