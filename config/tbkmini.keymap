@@ -80,15 +80,15 @@ lower_layer {
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |   SHIFT      |    !    |    @   |   #    |    $    |    %    |       |   ^   |    &    |    *    |    (    |     )    |     :    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |    CTRL      |         |    -   |   +    |    {    |    [    |       |   ]   |    }    |    _    |    =    |          |          |
+// |    CTRL      |         |    -   |   +    |    {    |    [    |       |   ]   |    }    |    _    |    =    |     .    |          |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
 //                                   |  MO3   |         |   GUI   |       |  DEL  |         |         |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
-   &kp GRAVE   &kp N1     &kp N2        &kp N3       &kp N4               &kp N5            &kp N6              &kp N7          &kp N8           &kp N9       &kp N0     &kp NUBS
-   &mt LSHIFT TAB  &kp EXCL   &kp AT        &kp HASH     &kp DLLR             &kp PRCNT         &kp CARET           &kp AMPS        &kp KP_MULTIPLY  &kp LPAR     &kp RPAR   &kp COLON
-   &kp LCTRL   &trans     &kp KP_MINUS  &kp KP_PLUS  &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp RIGHT_BRACE &kp UNDERSCORE   &kp EQUAL    &trans     &trans
-                                        &mo ADJUST   &trans               &kp LGUI          &trans             &trans       &trans
+   &kp GRAVE       &kp N1     &kp N2        &kp N3       &kp N4          &kp N5                 &kp N6              &kp N7          &kp N8           &kp N9       &kp N0     &kp NUBS
+   &mt LSHIFT TAB  &kp EXCL   &kp AT        &kp HASH     &kp DLLR        &kp PRCNT              &kp CARET           &kp AMPS        &kp KP_MULTIPLY  &kp LPAR     &kp RPAR   &kp COLON
+   &kp LCTRL       &trans     &kp KP_MINUS  &kp KP_PLUS  &kp LEFT_BRACE  &kp LEFT_BRACKET       &kp RIGHT_BRACKET   &kp RIGHT_BRACE &kp UNDERSCORE   &kp EQUAL    &kp KP_DOT &trans
+                                            &mo ADJUST   &trans          &kp LGUI               &trans              &trans          &trans
                         >;
                 };
                 
@@ -106,7 +106,7 @@ lower_layer {
                         bindings = <
    &trans       &kp PAGE_UP   &kp PAGE_UP    &kp UP_ARROW      &kp PAGE_DOWN      &kp HOME            &kp PSCRN          &kp KP_N7           &kp KP_N8     &kp KP_N9      &kp          &kp LG(LS(N4))
    &kp CAPSLOCK &kp PAGE_DOWN &kp LEFT_ARROW &kp DOWN_ARROW    &kp RIGHT_ARROW    &kp END             &kp INS            &kp KP_N4           &kp KP_N5     &kp KP_N6      &kp          &trans
-   &trans       &trans        &trans         &trans            &kp LC(LEFT_ARROW) &kp LC(RIGHT_ARROW) &kp KP_N0          &kp KP_N1           &kp KP_N2     &kp KP_N3      &trans       &out OUT_TOG
+   &trans       &trans        &trans         &trans            &trans             &trans              &kp KP_N0          &kp KP_N1           &kp KP_N2     &kp KP_N3      &trans       &out OUT_TOG
                                              &trans            &mo ADJUST         &trans              &kp DEL             &trans              &trans
                         >;
                 };
@@ -126,7 +126,7 @@ lower_layer {
    &kp F1      &kp F2         &kp F3         &kp F4          &kp F5          &kp F6            &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
    &trans      &trans          &trans         &trans          &trans          &trans            &trans             &trans &trans &trans &trans &trans
    &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp C_BRI_DN  &kp C_BRI_UP &trans &trans &trans &trans
-                                   &trans &trans  &sys_reset   &kp C_MUTE &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+                                   &trans &trans  &trans      &kp C_MUTE &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
                         >;
                 };
 
