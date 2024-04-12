@@ -65,7 +65,7 @@
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |     CTRL     |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    |     '    |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-//                                   |  ENT   |   MO1   |   GUI   |       |  BSPC |  SPACE/SPC  |   ALT   |
+//                                   |  ENT   |   MO1   |   GUI   |       |  BSPC |  SPACE/Spc  |   ALT   |
 //                                   '--------+---------+---------'       '-------+-------------+---------'
                         bindings = <
    &kp ESC        &kp Q       &kp W      &kp E     &kp R     &kp T           &kp Y  &kp U        &kp I        &kp O     &kp P      &kp LBKT
@@ -141,7 +141,7 @@
    &kp ESC        &kp Q       &kp W      &kp E     &kp R     &kp T           &kp Y  &kp U        &kp I        &kp O     &kp P      &kp LBKT
    &mt LSHIFT TAB &kp A       &kp S      &kp D     &kp F     &kp G           &kp H  &kp J        &kp K        &kp L     &kp SEMI   &kp RBKT
    &kp LCTRL      &kp Z       &kp X      &kp C     &kp V     &kp B           &kp N  &kp M        &kp COMMA    &kp DOT   &kp FSLH   &tog QWERTY
-                                         &LALT    &kp SPACE   &mo 1          &kp BSPC      &mt SPACE TAB   &kp LALT
+                                         &kp LALT    &kp SPACE   &mo 1          &kp BSPC      &mt SPACE TAB   &kp LALT
                         >;
                 };
     };
