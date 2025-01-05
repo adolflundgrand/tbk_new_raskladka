@@ -87,8 +87,8 @@
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&kp GRAVE       &kp N1    &kp N2        &kp N3       &kp N4          &kp N5              &kp LEFT_BRACKET   &kp N7           &kp N8           &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
-&mt LSHIFT TAB  &kp EXCL  &kp AT        &kp HASH     &kp DLLR        &kp PRCNT           &kp RIGHT_BRACKET  &kp AMPS         &kp KP_MULTIPLY  &kp PIPE  &mt COLON SEMICOLON         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
+&kp GRAVE       &kp N1    &kp N2        &kp N3       &kp N4          &kp N5              &kp LEFT_BRACKET   &kp KP_EQUAL     &kp KP_MULTIPLY  &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
+&mt LSHIFT TAB  &kp EXCL  &kp AT        &kp HASH     &kp DLLR        &kp PRCNT           &kp RIGHT_BRACKET  &kp PLUS         &kp KP_MINUS     &kp PIPE  &mt COLON SEMICOLON         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
 &kp LCTRL       &trans    &kp KP_MINUS  &kp KP_PLUS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp CARET          &kp RIGHT_BRACE  &kp UNDERSCORE   &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
                                         &mo 3        &trans          &kp LGUI            &trans             &trans           &trans
             >;
