@@ -88,10 +88,10 @@
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&kp GRAVE    &trans    &trans  &trans     &kp DOLLAR  &kp AMPS     &kp GRAVE         &kp KP_EQUAL         &kp ASTRK       &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
-&kp TAB      &kp EXCL  &kp AT  &kp HASH   &kp INS     &kp PRCNT    &kp QUESTION      &kp PLUS             &kp KP_MINUS    &kp PIPE  &mt COLON SEMICOLON         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
-&kp C_PAUSE  &trans    &trans  &trans     &trans      &trans       &mt TILDE2 TILDE  &mt GREATER_THAN LT  &kp UNDERSCORE  &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
-                               &kp ENTER  &trans      &kp BSPC     &kp DEL           &kp SPACE            &kp ENTER
+&kp GRAVE    &trans    &trans  &trans    &kp DOLLAR  &kp AMPS     &kp GRAVE         &kp KP_EQUAL         &kp ASTRK       &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
+&kp TAB      &kp EXCL  &kp AT  &kp HASH  &kp INS     &kp PRCNT    &kp QUESTION      &kp PLUS             &kp KP_MINUS    &kp PIPE  &mt COLON SEMICOLON         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
+&kp C_PAUSE  &trans    &trans  &trans    &trans      &trans       &mt TILDE2 TILDE  &mt GREATER_THAN LT  &kp UNDERSCORE  &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
+                               &none     &trans      &kp BSPC     &kp DEL           &kp SPACE            &none
             >;
         };
 
