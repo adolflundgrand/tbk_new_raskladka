@@ -90,10 +90,10 @@
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&kp GRAVE    &none     &none   &none     &kp DOLLAR  &kp AMPS     &kp GRAVE         &kp KP_EQUAL         &kp ASTRK       &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
-&kp TAB      &kp EXCL  &kp AT  &kp HASH  &kp INS     &kp PRCNT    &kp QUESTION      &kp PLUS             &kp KP_MINUS    &kp PIPE  &mt COLON SEMICOLON         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
-&kp C_PAUSE  &none     &none   &none     &none       &none        &mt TILDE2 TILDE  &mt GREATER_THAN LT  &kp UNDERSCORE  &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
-                               &none     &none       &kp BSPC     &kp DEL           &none                &none
+&kp GRAVE    &none     &none   &none     &kp DOLLAR  &kp AMPS     &kp GRAVE     &kp KP_EQUAL         &kp ASTRK       &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
+&kp TAB      &kp EXCL  &kp AT  &kp HASH  &kp INS     &kp PRCNT    &kp QUESTION  &kp PLUS             &kp KP_MINUS    &kp PIPE  &mt COLON SEMICOLON         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
+&kp C_PAUSE  &none     &none   &none     &none       &none        &kp TILDE     &mt GREATER_THAN LT  &kp UNDERSCORE  &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
+                               &none     &none       &none        &none         &none                &none
             >;
         };
 
@@ -109,10 +109,10 @@
             //                                 '--------+----------+----------'       '-------+----------+---------'
 
             bindings = <
-&none  &none  &kp HOME        &kp UP_ARROW    &kp END          &none    &none  &kp KP_N7  &kp KP_N8  &kp KP_N9  &none            &none
-&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_NUMBER_0  &none
-&none  &none  &kp PAGE_UP     &none           &kp PAGE_DOWN    &none    &none  &kp KP_N1  &kp KP_N2  &kp KP_N3  &none            &none
-                              &none           &none            &none    &none  &none      &none
+&none  &none  &kp HOME        &kp UP_ARROW    &kp END          &none         &none  &kp KP_N7  &kp KP_N8  &kp KP_N9  &none            &none
+&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none         &none  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_NUMBER_0  &none
+&none  &none  &kp PAGE_UP     &none           &kp PAGE_DOWN    &none         &none  &kp KP_N1  &kp KP_N2  &kp KP_N3  &none            &none
+                              &kt DEL         &kp DELETE       &kp DELETE    &none  &none      &none
             >;
         };
 
