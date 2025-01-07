@@ -67,7 +67,7 @@
                 <&macro_release>,
                 <&mo 1>,
                 <&macro_tap>,
-                <&kp RC(NUMBER_1)>;
+                <&kp LC(N1)>;
         };
     };
 
