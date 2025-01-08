@@ -24,7 +24,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            bindings = <&engl>, <&per>;
+            bindings = <&engl>, <&kp>;
         };
 
         lm: left_hand_positional_hold_tap {
