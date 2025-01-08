@@ -71,7 +71,7 @@
         per: perekluch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(N0)>;
+            bindings = <&macro_tap>, <&kp LA(LEFT_SHIFT)>;
         };
     };
 
