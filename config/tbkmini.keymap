@@ -98,7 +98,7 @@
 &lt 3 ESC           &kp Q           &kp W               &kp E             &kp R           &kp T        &kp Y      &kp U           &kp I              &kp O                &kp P               &kp LBKT
 &mt LA(LSHIFT) TAB  &lm LEFT_GUI A  &lm LEFT_CONTROL S  &lm LEFT_SHIFT D  &lm LEFT_ALT F  &kp G        &kp H      &rm LEFT_ALT J  &rm RIGHT_SHIFT K  &rm RIGHT_CONTROL L  &rm RIGHT_GUI SEMI  &kp RBKT
 &kp CAPS            &kp Z           &kp X               &kp C             &kp V           &kp B        &kp N      &kp M           &kp COMMA          &kp DOT              &kp FSLH            &kp SQT
-                                                        &kp DELETE        &rs engl  per        &kp SPACE    &kp ENTER  &mo 2           &kp BACKSPACE
+                                                        &kp DELETE        &kp A        &kp SPACE    &kp ENTER  &mo 2           &kp BACKSPACE
             >;
         };
 
