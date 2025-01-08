@@ -53,7 +53,7 @@
     };
 
     macros {
-        engl: english {
+        engl: engli {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -69,16 +69,15 @@
                      };
               };
     macros {
-             per: perekluch {
-                             compatible = "zmk,behavior-macro";
-                              #binding-cells = <0>;
-                               bindings =
-                               <&macro_tap>,
-                               <&kp LC(N0)>;
-                             };
+        per: perekluch {
+             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(N0)>;
+                    };
           };
 
-        };
 
     keymap {
         compatible = "zmk,keymap";
