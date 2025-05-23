@@ -112,9 +112,9 @@
             //                                   '--------+---------+---------'       '-------+-------------+---------'
 
             bindings = <
-&kp O     &kp W             &kp R  &kp K       &kp COMMA             &kp T        &kp Y      &kp U                       &kp I              &kp O                &kp P               &lt 3 LBKT
-&kp X     &kp P             &kp D  &kp Y       &lm LEFT_ALT F        &kp G        &kp H      &rm LEFT_ALT J              &rm RIGHT_SHIFT K  &rm RIGHT_CONTROL L  &rm RIGHT_GUI SEMI  &kp RBKT
-&kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V                 &kp B        &kp N      &kp M                       &kp COMMA          &kp DOT              &kp FSLH            &kp SQT
+&kp O     &kp W             &kp R  &kp K       &kp COMMA             &kp Q        &kp Y      &kp U                       &kp I              &kp O                &kp P               &lt 3 LBKT
+&kp X     &kp P             &kp D  &kp Y       &kp N                 &kp L        &kp H      &rm LEFT_ALT J              &rm RIGHT_SHIFT K  &rm RIGHT_CONTROL L  &rm RIGHT_GUI SEMI  &kp RBKT
+&kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V                 &kp U        &kp N      &kp M                       &kp COMMA          &kp DOT              &kp FSLH            &kp SQT
                                    &kp DELETE  &rs BACKSPACE LC(N1)  &kp SPACE    &kp ENTER  &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
             >;
         };
