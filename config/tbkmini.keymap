@@ -131,9 +131,9 @@
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&kp GRAVE  &none     &kp K  &kp L  &kp DOLLAR  &kp J    &kp GRAVE  &kp KP_EQUAL         &kp ASTRK  &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
-&kp TAB    &kp EXCL  &kp B  &kp H  &kp T       &kp D    &kp I      &kp A                &kp O      &kp E     &kp C                       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
-&kp G      &kp X     &none  &kp P  &kp M       &none    &kp TILDE  &mt GREATER_THAN LT  &kp Y      &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
+&kp GRAVE  &none     &kp K  &kp L  &kp DOLLAR  &kp J    &kp GRAVE  &kp U                &kp Q  &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
+&kp TAB    &kp EXCL  &kp B  &kp H  &kp T       &kp D    &kp I      &kp A                &kp O  &kp E     &kp C                       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
+&kp G      &kp X     &none  &kp P  &kp M       &none    &kp TILDE  &mt GREATER_THAN LT  &kp Y  &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
                             &none  &none       &none    &kp ESC    &none                &none
             >;
         };
