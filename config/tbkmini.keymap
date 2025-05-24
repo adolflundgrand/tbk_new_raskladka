@@ -131,10 +131,10 @@
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&kp GRAVE    &none     &none   &none     &kp DOLLAR  &kp AMPS     &kp GRAVE     &kp KP_EQUAL         &kp ASTRK       &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
-&kp TAB      &kp EXCL  &kp AT  &kp HASH  &kp INS     &kp PRCNT    &kp QUESTION  &kp PLUS             &kp KP_MINUS    &kp PIPE  &mt COLON SEMICOLON         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
-&kp C_PAUSE  &none     &none   &none     &none       &none        &kp TILDE     &mt GREATER_THAN LT  &kp UNDERSCORE  &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
-                               &none     &none       &none        &kp ESC       &none                &none
+&kp GRAVE    &none     &kp K  &kp L  &kp DOLLAR  &kp J    &kp GRAVE  &kp KP_EQUAL         &kp ASTRK       &kp FSLH  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET
+&kp TAB      &kp EXCL  &kp B  &kp H  &kp T       &kp D    &kp I      &kp A                &kp O           &kp PIPE  &mt COLON SEMICOLON         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
+&kp C_PAUSE  &none     &none  &none  &none       &none    &kp TILDE  &mt GREATER_THAN LT  &kp UNDERSCORE  &kp BSLH  &mt PERIOD COMMA            &mt SINGLE_QUOTE DOUBLE_QUOTES
+                              &none  &none       &none    &kp ESC    &none                &none
             >;
         };
 
