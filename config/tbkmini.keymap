@@ -132,8 +132,8 @@
 
             bindings = <
 &none  &kp V  &kp K  &kp L  &kp Q  &kp J    &none    &kp U  &kp R  &none  &kp F  &none
-&none  &kp Z  &kp B  &kp H  &kp T  &kp D    &none    &kp A  &kp O  &kp E  &kp C  &none
-&none  &kp X  &kp N  &kp P  &kp M  &kp G    &none    &kp S  &kp Y  &none  &none  &none
+&none  &kp Z  &kp B  &kp H  &kp T  &kp D    &kp I    &kp A  &kp O  &kp E  &kp C  &none
+&none  &kp X  &kp N  &kp P  &kp M  &kp G    &none    &kp S  &kp Y  &none  &kp W  &none
                      &none  &none  &none    &kp ESC  &none  &none
             >;
         };
