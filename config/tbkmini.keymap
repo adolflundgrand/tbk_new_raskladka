@@ -90,15 +90,15 @@
                 <&kp LC(N1)>;
         };
         
-zn: zn {
+           zn: zn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-           wait-ms = <40>;
-           tap-ms = <40>;
-           bindings
-           = <&macro_press   &kp LALT>,
-             <&macro_tap  &kp KP N0 &kp KP N1 &kp KP N6 &kp KP N3>,
+                 wait-ms = <40>;
+                tap-ms = <40>;
+           bindings =
+             <&macro_press   &kp LALT>,
+             <&macro_tap  &kp N0 &kp N1 &kp N6 &kp N3>,
              <&macro_release &kp LALT>,
            
         };
