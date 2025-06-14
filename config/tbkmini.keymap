@@ -3,10 +3,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define zero_0 0
-#define znaki_1 1
-#define navi_cifra_2 2
-#define bluetooch_3 3
+// #define zero_0 0
+// #define znaki_1 1
+// #define navi_cifra_2 2
+// #define bluetooch_3 3
 
 &lt {
     tapping-term-ms = <300>;
