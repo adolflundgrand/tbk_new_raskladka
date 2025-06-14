@@ -99,7 +99,7 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp N0 &kp N1 &kp N7 &kp NUMBER_1>,
+                <&kp N0 &kp N1 &kp N7 &kp N1>,
                 <&macro_release>,
                 <&kp LALT>;
         };
