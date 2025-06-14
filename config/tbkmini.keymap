@@ -89,16 +89,19 @@
                 <&macro_tap>,
                 <&kp LC(N1)>;
         };
-        
-           zn: zn {
+
+        zn: zn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings =
-             <&macro_press   &kp RALT>,
-             <&macro_tap  &kp N0 &kp N1 &kp N6 &kp N3>,
-             <&macro_release &kp RALT>;           
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N1 &kp N6 &kp N3>,
+                <&macro_release>,
+                <&kp RALT>;
         };
 
         per: perekluch {
@@ -123,10 +126,10 @@
             //                                   '--------+---------+---------'       '-------+-------------+---------'
 
             bindings = <
-&kp O     &kp W             &kp R  &kp K       &kp COMMA             &kp Q        &kp RIGHT_BRACKET  &kp S                       &kp Z          &kp APOSTROPHE  &kp A  &lt 3 LBKT
-&kp X     &kp P             &kp D  &kp Y       &kp N                 &kp L        &kp B              &kp F                       &kp J          &kp T           &kp C  &kp RBKT
-&kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V                 &kp U        &kp GRAVE          &kp M                       &kp E          &kp DOT         &kp I  &kp SQT
-                                   &kp DELETE  &rs BACKSPACE LC(N1)  &kp SPACE    &kp ENTER          &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
+&kp O     &kp W             &kp R  &kp K       &kp COMMA  &kp Q        &kp RIGHT_BRACKET  &kp S                       &kp Z          &kp APOSTROPHE  &kp A  &lt 3 LBKT
+&kp X     &kp P             &kp D  &kp Y       &kp N      &kp L        &kp B              &kp F                       &kp J          &kp T           &kp C  &kp RBKT
+&kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V      &kp U        &kp GRAVE          &kp M                       &kp E          &kp DOT         &kp I  &kp SQT
+                                   &kp DELETE  &to 1      &kp SPACE    &kp ENTER          &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
             >;
         };
 
@@ -142,14 +145,14 @@
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&zn  &kp V  &kp K  &kp L  &kp Q  &kp J    &none    &kp U  &kp R  &none  &kp F  &none
+&zn    &kp V  &kp K  &kp L  &kp Q  &kp J    &none    &kp U  &kp R  &none  &kp F  &none
 &none  &kp Z  &kp B  &kp H  &kp T  &kp D    &kp I    &kp A  &kp O  &kp E  &kp C  &none
 &none  &kp X  &kp N  &kp P  &kp M  &kp G    &none    &kp S  &kp Y  &none  &kp W  &none
                      &none  &none  &none    &kp ESC  &none  &none
             >;
         };
 
-        navi_cifra_2 {
+        znak {
             // .--------------------------------------------------------------.       .-----------------------------------------------------------------.
             // |              |  PU   |   PU   |   UP   |    PD    |   HOME   |       | PrtScr|  KP_N7   |  KP_N8  |  KP_N9  |          | CMD+SHIFT+4 |
             // |--------------+-------+--------+--------+----------+----------|       |-------+----------+---------+---------+----------+-------------|
