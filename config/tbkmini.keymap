@@ -97,11 +97,11 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp RALT>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp N0 &kp N0 &kp B &kp B>,
+                <&kp N0 &kp N1 &kp N7 &kp NUMBER_1>,
                 <&macro_release>,
-                <&kp RALT>;
+                <&kp LALT>;
         };
 
         per: perekluch {
