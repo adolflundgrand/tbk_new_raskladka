@@ -113,7 +113,7 @@
         Sloi_0: Sloi_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>, <&macro_tap>, <&to 0 &kp LC(N0)>;
+            bindings = <&macro_tap>, <&to 0 &kp LC(N0)>;
 
             label = "SLOI_0";
         };
