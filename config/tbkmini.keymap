@@ -60,56 +60,6 @@
     };
 
     macros {
-        engl: engli {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LC(N0)>,
-                <&macro_press>,
-                <&mo 1>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&kp LC(N1)>;
-        };
-
-        cif: cifra {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LC(N0)>,
-                <&macro_press>,
-                <&mo 2>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 2>,
-                <&macro_tap>,
-                <&kp LC(N1)>;
-        };
-
-        zn: zn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_N1 &kp KP_NUMBER_7 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        per: perekluch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LA(LEFT_SHIFT)>;
-        };
-
         Sloi_0: Sloi_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -126,12 +76,20 @@
             label = "SLOI_1";
         };
 
-        Sloi_2: Sloi_2 {
+        tochka: tochka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&sl 2>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_N1 &kp KP_NUMBER_7 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LALT>;
 
-            label = "SLOI_2";
+            label = "TOCHKA";
         };
     };
 
