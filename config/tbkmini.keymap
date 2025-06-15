@@ -117,6 +117,14 @@
 
             label = "SLOI_0";
         };
+
+        Sloi_1: sloi_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 0 &kp RC(NUMBER_1)>;
+
+            label = "SLOI_1";
+        };
     };
 
     keymap {
@@ -134,8 +142,8 @@
             //                                   '--------+---------+---------'       '-------+-------------+---------'
 
             bindings = <
-&kp O     &kp W             &kp R  &kp K       &kp COMMA  &kp Q        &kp RIGHT_BRACKET  &kp S                       &kp Z          &kp APOSTROPHE  &kp A  &none
-&kp X     &kp P             &kp D  &kp Y       &kp N      &kp L        &kp B              &kp F                       &kp J          &kp T           &kp C  &none
+&kp O     &kp W             &kp R  &kp K       &kp COMMA  &kp Q        &kp RIGHT_BRACKET  &kp S                       &kp Z          &kp APOSTROPHE  &kp A  &Sloi_0
+&kp X     &kp P             &kp D  &kp Y       &kp N      &kp L        &kp B              &kp F                       &kp J          &kp T           &kp C  &Sloi_1
 &kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V      &kp U        &kp GRAVE          &kp M                       &kp E          &kp DOT         &kp I  &none
                                    &kp DELETE  &none      &kp SPACE    &kp ENTER          &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
             >;
