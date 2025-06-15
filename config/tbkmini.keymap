@@ -66,6 +66,8 @@
             bindings = <&macro_tap>, <&to 0 &kp LC(N0)>;
 
             label = "SLOI_0";
+            wait-ms = <15>;
+            tap-ms = <30>;
         };
 
         Sloi_1: sloi_1 {
@@ -90,6 +92,30 @@
                 <&kp LALT>;
 
             label = "TOCHKA";
+        };
+
+        Sloi_2: Sloi_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 2 &kp RC(NUMBER_1)>;
+
+            label = "SLOI_2";
+        };
+
+        Sloi_3: Sloi_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 2 &kp RC(NUMBER_1)>;
+
+            label = "SLOI_3";
+        };
+
+        Sloi_4: Sloi_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 2 &kp RC(NUMBER_1)>;
+
+            label = "SLOI_4";
         };
     };
 
@@ -153,7 +179,7 @@
             >;
         };
 
-        blue {
+        cif+nav+blue {
             // .-------------------------------------------------------------.       .--------------------------------------------------------------.
             // |   F1         |   F2   |   F3   |   F4   |   F5    |   F6    |       |   F7   |   F8   |   F9    |   F10   |   F11    |     F12     |
             // |--------------+--------+--------+--------+---------+---------|       |--------+--------+---------+---------+----------+-------------|
