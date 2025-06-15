@@ -73,12 +73,36 @@
         Sloi_1: sloi_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 2 &kp RC(NUMBER_1)>;
+            bindings = <&macro_tap>, <&to 1 &kp RC(NUMBER_1)>;
 
             label = "SLOI_1";
         };
 
-        tochka: tochka {
+        Sloi_2: Sloi_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 2>;
+
+            label = "SLOI_2";
+        };
+
+        Sloi_3: Sloi_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 3>;
+
+            label = "SLOI_3";
+        };
+
+        Sloi_4: Sloi_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 2>;
+
+            label = "SLOI_4";
+        };
+
+        ravno: ravno {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -91,31 +115,7 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "TOCHKA";
-        };
-
-        Sloi_2: Sloi_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 2 &kp RC(NUMBER_1)>;
-
-            label = "SLOI_2";
-        };
-
-        Sloi_3: Sloi_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 2 &kp RC(NUMBER_1)>;
-
-            label = "SLOI_3";
-        };
-
-        Sloi_4: Sloi_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 2 &kp RC(NUMBER_1)>;
-
-            label = "SLOI_4";
+            label = "RAVNO";
         };
     };
 
@@ -136,8 +136,8 @@
             bindings = <
 &kp O     &kp W             &kp R  &kp K       &kp COMMA  &kp Q        &kp RIGHT_BRACKET  &kp S                       &kp Z          &kp APOSTROPHE  &kp A  &Sloi_0
 &kp X     &kp P             &kp D  &kp Y       &kp N      &kp L        &kp B              &kp F                       &kp J          &kp T           &kp C  &Sloi_1
-&kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V      &kp U        &kp GRAVE          &kp M                       &kp E          &kp DOT         &kp I  &sl 3
-                                   &kp DELETE  &none      &kp SPACE    &kp ENTER          &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
+&kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V      &kp U        &kp GRAVE          &kp M                       &kp E          &kp DOT         &kp I  &Sloi_2
+                                   &kp DELETE  &sl 3      &kp SPACE    &kp ENTER          &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
             >;
         };
 
@@ -160,7 +160,7 @@
             >;
         };
 
-        znak {
+        cif+nav+blue {
             // .--------------------------------------------------------------.       .-----------------------------------------------------------------.
             // |              |  PU   |   PU   |   UP   |    PD    |   HOME   |       | PrtScr|  KP_N7   |  KP_N8  |  KP_N9  |          | CMD+SHIFT+4 |
             // |--------------+-------+--------+--------+----------+----------|       |-------+----------+---------+---------+----------+-------------|
@@ -179,7 +179,7 @@
             >;
         };
 
-        cif+nav+blue {
+        znak {
             // .-------------------------------------------------------------.       .--------------------------------------------------------------.
             // |   F1         |   F2   |   F3   |   F4   |   F5    |   F6    |       |   F7   |   F8   |   F9    |   F10   |   F11    |     F12     |
             // |--------------+--------+--------+--------+---------+---------|       |--------+--------+---------+---------+----------+-------------|
@@ -195,6 +195,15 @@
 &out OUT_BLE  &out OUT_USB    &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &none        &none  &none  &none  &none  &none
 &bt BT_CLR    &bt BT_CLR_ALL  &none  &bt BT_SEL 3  &bt BT_SEL 4  &sys_reset      &none        &none  &none  &none  &none  &none
                                      &none         &none         &none           &none        &none  &none
+            >;
+        };
+
+        blue {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
