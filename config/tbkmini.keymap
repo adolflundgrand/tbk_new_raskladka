@@ -145,9 +145,9 @@
             //                                   '--------+---------+---------'       '-------+-------------+---------'
 
             bindings = <
-&kp O     &kp W             &kp R  &kp K       &kp COMMA  &kp Q        &kp RIGHT_BRACKET  &kp S                       &kp Z          &kp APOSTROPHE  &kp A  &lt 3 LBKT
-&kp X     &kp P             &kp D  &kp Y       &kp N      &kp L        &kp B              &kp F                       &kp J          &kp T           &kp C  &kp RBKT
-&kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V      &kp U        &kp GRAVE          &kp M                       &kp E          &kp DOT         &kp I  &kp SQT
+&kp O     &kp W             &kp R  &kp K       &kp COMMA  &kp Q        &kp RIGHT_BRACKET  &kp S                       &kp Z          &kp APOSTROPHE  &kp A  &none
+&kp X     &kp P             &kp D  &kp Y       &kp N      &kp L        &kp B              &kp F                       &kp J          &kp T           &kp C  &none
+&kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V      &kp U        &kp GRAVE          &kp M                       &kp E          &kp DOT         &kp I  &none
                                    &kp DELETE  &none      &kp SPACE    &kp ENTER          &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
             >;
         };
