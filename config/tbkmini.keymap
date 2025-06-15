@@ -121,9 +121,17 @@
         Sloi_1: sloi_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 1 &kp RC(NUMBER_1)>;
+            bindings = <&macro_tap>, <&to 2 &kp RC(NUMBER_1)>;
 
             label = "SLOI_1";
+        };
+
+        Sloi_2: Sloi_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&sl 2>;
+
+            label = "SLOI_2";
         };
     };
 
