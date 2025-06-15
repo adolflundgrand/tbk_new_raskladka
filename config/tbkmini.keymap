@@ -114,8 +114,6 @@
     keymap {
         compatible = "zmk,keymap";
 
- 
-
         Ang {
             // .--------------------------------------------------------------.       .-----------------------------------------------------------.
             // |   ~          |    1    |    2   |   3    |    4    |    5    |       |   6   |    7    |    8    |    9    |     0    |    \     |
@@ -128,14 +126,14 @@
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&zn    &kp V  &kp K  &kp L  &kp Q  &kp J    &none    &kp U  &kp R  &none  &kp F  &none
-&none  &kp Z  &kp B  &kp H  &kp T  &kp D    &kp I    &kp A  &kp O  &kp E  &kp C  &none
-&none  &kp X  &kp N  &kp P  &kp M  &kp G    &none    &kp S  &kp Y  &none  &kp W  &none
-                     &none  &none  &none    &kp ESC  &to 0  &none
+&to 0  &kp V  &kp K  &kp L       &kp Q  &kp J        &none      &kp U  &kp R          &none  &kp F  &to 1
+&none  &kp Z  &kp B  &kp H       &kp T  &kp D        &kp I      &kp A  &kp O          &kp E  &kp C  &none
+&none  &kp X  &kp N  &kp P       &kp M  &kp G        &none      &kp S  &kp Y          &none  &kp W  &none
+                     &kp DELETE  &none  &kp SPACE    &kp ENTER  &none  &kp BACKSPACE
             >;
         };
 
-       Rus {
+        Rus {
             // .--------------------------------------------------------------.       .-----------------------------------------------------------.
             // |   ESC        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    [     |
             // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
@@ -150,7 +148,7 @@
 &kp O     &kp W             &kp R  &kp K       &kp COMMA  &kp Q        &kp RIGHT_BRACKET  &kp S                       &kp Z          &kp APOSTROPHE  &kp A  &lt 3 LBKT
 &kp X     &kp P             &kp D  &kp Y       &kp N      &kp L        &kp B              &kp F                       &kp J          &kp T           &kp C  &kp RBKT
 &kp SEMI  &kp LEFT_BRACKET  &kp G  &kp H       &kp V      &kp U        &kp GRAVE          &kp M                       &kp E          &kp DOT         &kp I  &kp SQT
-                                   &kp DELETE  &to 1      &kp SPACE    &kp ENTER          &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
+                                   &kp DELETE  &none      &kp SPACE    &kp ENTER          &cf BACKSPACE LC(NUMBER_0)  &kp BACKSPACE
             >;
         };
 
@@ -193,4 +191,3 @@
         };
     };
 };
-
